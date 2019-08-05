@@ -1,0 +1,46 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hh;hpp;hxx;hm;inl;inc;ipp;xsd</Extensions>
+    </Filter>
+    <Filter Include="Standard">
+      <UniqueIdentifier>{7469783b-0100-453c-bddd-0fecfd93a02b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source\Hardware">
+      <UniqueIdentifier>{adf84da2-43cf-45ec-bc75-ea9047fa783d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source\DLL Interface">
+      <UniqueIdentifier>{f8352b57-40a6-416a-a5d8-e18a35f25653}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="pch.cpp">
+      <Filter>Standard</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="pch.h">
+      <Filter>Standard</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\source\ITemperatureController.h">
+      <Filter>Source\Hardware</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\source\DLLTemperatureController.h">
+      <Filter>Source\DLL Interface</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\source\DLLItemSelector.h">
+      <Filter>Source\DLL Interface</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\source\IItemSelector.h">
+      <Filter>Source\Hardware</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\source\DLLVendor.h">
+      <Filter>Source\DLL Interface</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\source\IVendor.h">
+      <Filter>Source\Hardware</Filter>
+    </ClInclude>
+  </ItemGroup>
+</Project>

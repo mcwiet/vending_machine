@@ -1,0 +1,57 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="pch.cpp">
+      <Filter>Standard</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\test\RefrigeratorFixture.cpp">
+      <Filter>Refrigerator</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\test\RefrigeratorTests.cpp">
+      <Filter>Refrigerator</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\test\ConsoleInputFixture.cpp">
+      <Filter>ConsoleInput</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\test\ConsoleInputTests.cpp">
+      <Filter>ConsoleInput</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\test\CanVendorFixture.cpp">
+      <Filter>CanVendor</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\test\CanVendorTests.cpp">
+      <Filter>CanVendor</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="pch.h">
+      <Filter>Standard</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\test\RefrigeratorFixture.h">
+      <Filter>Refrigerator</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\test\ConsoleInputFixture.h">
+      <Filter>ConsoleInput</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\test\CanVendorFixture.h">
+      <Filter>CanVendor</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="Standard">
+      <UniqueIdentifier>{a7c0c765-31d1-4413-82ff-bf5fe232b3b2}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Refrigerator">
+      <UniqueIdentifier>{4bb6f03b-737e-4edb-801f-8d0ddca8a934}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ConsoleInput">
+      <UniqueIdentifier>{fcfea8f1-c442-4a81-acee-fe727948fc55}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="CanVendor">
+      <UniqueIdentifier>{70c43f9c-7bdc-4b3a-91d7-86c56fe7ce48}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="packages.config" />
+  </ItemGroup>
+</Project>
