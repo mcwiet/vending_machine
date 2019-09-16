@@ -69,7 +69,10 @@ In retrospect, I wish I had planned to implement a single-threaded, blocking app
 1. Payment mechanism
 1. Convert interfaces to asynchronous + multithreaded
 1. Load DLL's based on filename prefix (e.g. "TemperatureController_") to allow true hotswapping
-...
+### Unfortuante Oversight
+After talking over my design with another software engineer, I realized that DLL's would not be accomplishing exactly what I thought they would. My assumption was that if multiple applications / processes tried to load a DLL, they would be loading it from a shared memory space. That is not the case. Every application that loads a DLL will load it at most one time and load it into the context of the calling process' memory. I would likely need to change some other aspects of my design to acheive what I'm ultimately looking for. For example, let's say that we added another process to the system that is running the vending machine software and that process also needs to know the status of the temperature control mechanism. The processes would not be accessing the same temperature control object in memory which means the DLL cannot use mutexes and other thread guards to manage access to a HAL resource; we would need to use other mechanisms instead. If it were a Unix system with device files we could use file access errors to manage the shared resource.
+
+I may not take this change into account if I progress futher in the project but wanted to specifically call it out for future reference.
 ## References
 * Draw.io - https://www.draw.io/
 * Learning about DLL's - https://docs.microsoft.com/en-us/windows/win32/dlls/dynamic-link-libraries
